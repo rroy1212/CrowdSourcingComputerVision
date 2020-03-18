@@ -1,0 +1,139 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "survey me",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "rating",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "i think {rating}",
+                        "it give it {rating}",
+                        "it is {rating}",
+                        "maybe {rating}",
+                        "{rating} maybe",
+                        "{rating}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RepeatIntent",
+                    "slots": [],
+                    "samples": [
+                        "come again",
+                        "can you repeat that",
+                        "please repeat",
+                        "repeat the caption",
+                        "repeat"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Emotions",
+                    "values": [
+                        {
+                            "id": "4",
+                            "name": {
+                                "value": "excited"
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "name": {
+                                "value": "angry"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "name": {
+                                "value": "sad",
+                                "synonyms": [
+                                    "bad"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "name": {
+                                "value": "happy",
+                                "synonyms": [
+                                    "good"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "AnswerIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "rating",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.109642266911.1331770844549"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.311274473232.429766997694",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "You can say happy, sad, angry or excited"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.109642266911.1331770844549",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "your rating can be from one to five"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "please give a rating between one and five"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "you can say any number between one and five"
+                    }
+                ]
+            }
+        ]
+    }
+}

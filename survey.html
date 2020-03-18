@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type='text/javascript' src='https://s3.amazonaws.com/mturk-public/externalHIT_v1.js'></script>
+<title data-toggle="tooltip" data-placement="left" title="Tooltip on left"> Emotion Recognition Task</title> 
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+  integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css"  href="customStyle.css"/>
+
+</head>
+
+<body>
+    	
+        <div class="header-class color-theme text-center " style="margin-bottom: 3px;">
+                <h1 style="height: 70px;">Emotion Recognition Task</h1>
+        </div>
+              
+              <div class="container">    
+                  <div class="row">
+                    <div class="col-sm-11">
+                    <p>
+                    </br>Follow the instructions given below to help you to select the best rating:</br> 
+                      <ol>
+                        <li>Every image is followed by a five different rating levels.We want you to provide us with what you think are the level of people's happiness as seen in the image. </li>
+                        <li>The happiness rating is done on a scale of 1 to 5,with one being the least happy and 5 being the most happy.</li>
+                        
+                        <!-- <li>You can refer the following definitions of various emotions to define the happiness rating level for any kind of image</li>
+                        <li>Anger is associated with strong feelings of annoyance or displeasure. An angry person may show signs of hostility and resentment.Rating Level:2</li>
+                        <li>Sadness is associated with feelings of depression, anxiety and antisocial personality. A sad person may show signs of sorrow,homesick and unhappy.Rating Level: 1</li>
+                        <li>Disgust is associated with feelings of repulsion or distaste. A disgusted person may show signs of disapproval and offense.Rating Level: 2</li>
+                        <li> Happiness is associated with feelings of contentment or pleasure. A happy person may show signs of joy and well-being.Rating Level: 5</li> -->
+                      </ol>
+                    </p>
+                    </div>
+                    
+                    <div class="col-sm-1">
+                   <a href=""  class="link-format"  data-toggle="modal" data-target="#modalPopUp"><u>Examples</u></a>
+                 
+                  </div>
+                  </div>
+
+                  <!-- <div id="modalPopUp" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <div class="modal-content modal-width">
+                          <div class="modal-header less-padding">  
+                            <h4 class="modal-title float">Object Recognition Task Examples</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                            <table class="table table-bordered">
+                              <thead class="color-theme">
+                                <tr>
+                                  <th>Good Examples</th>  
+                                  <th>Bad Examples</th>  
+                                </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+  
+                                      <td>  
+                                      <div class="table-content img-format ">
+                                      <img class="img-format" src="Good_Image5.jpg" id="good1" alt="Image of a bag.">
+                                      </div>  
+                                      </td>
+                                      <td>  
+                                          <div class="table-content img-format">
+                                          <img class="img-format" src="Bad_Image1.jpg" alt="Image of a bag.">
+                                         
+                                          </div>  
+                                          </td>
+                                          
+                                  </tr>
+                                  <tr>
+  
+                                      <td>  
+                                      <div class="table-content img-format ">
+                                      <img class="img-format" src="Bag16.jpg"  id="good1" alt="Image of a bag.">
+                                      </div>  
+                                      </td>
+                                      <td>  
+                                          <div class="table-content img-format">
+                                          <img class="img-format" src="Bag13.png"  alt="Image of a bag.">
+                                        
+                                          </div>  
+                                          </td>
+                                        
+                                  </tr>
+                              </tbody>  
+                              </table>
+                          </div>
+                          <div class="modal-footer less-padding">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                    
+                      </div>
+                    </div> -->
+                    <div id="modalPopUp" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <div class="modal-content modal-width">
+                          <div class="modal-header less-padding">  
+                            <h4 class="modal-title float">Emotion Recognition Task Examples</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                            <table class="table table-bordered">
+                              <thead class="color-theme">
+                                <tr>
+                                  <th>Good Examples</th>  
+                                  <th>Bad Examples</th>  
+                                </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+  
+                                      <td>  
+                                      <div class="table-content ">
+                                      <img class="example_image-format" src="Images/Good_Image1.jpg" id="good1" alt="Image of a bag.">
+                                      <p>Happiness Rating: 5</p>
+                                      </div>  
+                                      </td>
+                                      <td>  
+                                          <div class="table-content">
+                                          <img class="example_image-format" src="Images/Bad_Image1.jpg" alt="Image of a bag.">
+                                          <p>Happiness Rating: 5</p>
+                                          </div>  
+                                          </td>
+                                          
+                                  </tr> 
+                                  <tr>
+  
+                                      <td>  
+                                      <div class="table-content">
+                                      <img class="example_image-format" src="Images/Good_Image2.jpg"  id="good1" alt="Image of a bag.">
+                                      <p>Happiness Rating: 5</p>
+                                      </div>  
+                                      </td>
+                                      <td>  
+                                          <div class="table-content">
+                                          <img class="example_image-format" src="Images/Bad_Image2.jpg"  alt="Image of a bag.">
+                                          <p>Happiness Rating: 5</p>
+                                        
+                                          </div>  
+                                          </td>
+                                        
+                                  </tr>
+                              </tbody>  
+                              </table>
+                          </div>
+                          <div class="modal-footer less-padding">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                    
+                      </div>
+                    </div>
+                   <!-- <div id="modalPopUp" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content modal-width">
+                        <div class="modal-header less-padding">  
+                          <h4 class="modal-title float">Emotion Recognition Task Examples</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                          <table class="table table-bordered">
+                            <thead class="color-theme">
+                              <tr>
+                                <th>Sample Image</th>  
+                                <th>Rating</th>  
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td>  
+                                    <div class="table-content img-format ">
+                                    <img class="img-format" src="Good_Image5.jpg" id="good1" alt="Image of a bag.">
+                                    </div>  
+                                    </td>
+                                    <td>  
+                                        <div class="table-content img-format">
+                                        <img class="img-format" src="Bad_Image1.jpg" alt="Image of a bag.">
+                                       
+                                        </div>  
+                                        </td>
+                                        
+                                </tr>
+                                <tr>
+
+                                    <td>  
+                                    <div class="table-content img-format ">
+                                    <img class="img-format" src="Bag16.jpg"  id="good1" alt="Image of a bag.">
+                                    </div>  
+                                    </td>
+                                    <td>  
+                                        <div class="table-content img-format">
+                                        <img class="img-format" src="Bag13.png"  alt="Image of a bag.">
+                                      
+                                        </div>  
+                                        </td>
+                                      
+                                </tr>
+                            </tbody>  
+                            </table>
+                        </div>
+                        <div class="modal-footer less-padding">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                  
+                    </div>
+                  </div>
+                 -->
+
+                <form name='mturk_form' method='post' id='mturk_form' action='https://workersandbox.mturk.com/mturk/externalSubmit'>
+                
+                <div class="col-sm-12 row">
+                <div class="col-sm-6" style="text-align:center">
+                    <!-- <img class="img-format" src="000000019924.jpg"  alt="Image of a person."> -->
+                    <img class="img-format" id="image" width="40%" height="40%"> 
+                </div>
+                <div class="col-sm-3" style="margin-top:5% !important" id="rating_level">
+                        <div class="radio"> 
+                                <label for="One">
+                                <input type="radio" name="emotion" required value="1" id="One" onclick="selected_emotion(this.value)"> 1
+                                </label>  
+                        </div>
+                        <div class="radio"> 
+                                <label for="Two">
+                                <input type="radio" name="emotion" required value="2" onclick="selected_emotion(this.value)" id="Two"> 2
+                                </label>  
+                        </div>
+                        <div class="radio"> 
+                                <label for="Three">
+                                <input type="radio" name="emotion" required onclick="selected_emotion(this.value)" value="3" id="Three"> 3
+                                </label>  
+                        </div>
+                        <div class="radio"> 
+                                <label for="Four">
+                                <input type="radio"  name="emotion" required onclick="selected_emotion(this.value)" value="4" id="Four"> 4
+                                </label>  
+                        </div>
+                        <div class="radio"> 
+                          <label for="Five">
+                          <input type="radio"  name="emotion" required onclick="selected_emotion(this.value)" value="5" id="Five"> 5
+                          </label>  
+                  </div>
+                </div>
+                <div class="col-sm-3" style="margin-top:7% !important">
+                  <button type="button" class="btn color-theme btn-secondary" style="margin-top:10% !important" id="Next" onclick="loadNextImage()">Next</button>
+                  <input type='submit' class="btn color-theme btn-secondary" style="margin-top:10% !important"  id="submitButton" onclick="isSelected()" value='Submit'/> 
+<!-- <a id="google_form" href="https://docs.google.com/forms/d/e/1FAIpQLSea9ssBuNqeQLxk3PVcHo_Snky9pfb9l1LIdzTNp2FDESBtEw/viewform?usp=sf_link">Please Complete this Survey!!</a> -->
+                </div>
+                </div>
+            <input type='hidden' value='' name='assignmentId' id='assignmentId'/>
+            <input type='hidden' value='' name='selected_Emotion' id='selected_Emotion'/>
+             <!-- <div class="row" style="text-align: center; display: block;margin-top:-1%">  -->
+                 <!-- <button type="button" class="btn color-theme btn-secondary" onclick="isSelected()">Submit</button>  -->
+                 <!-- <input type='submit' class="btn color-theme btn-secondary" id='submitButton' onclick="isSelected()" value='Submit'/>   -->
+            <!-- </div> -->
+                </form>
+                <script src="survey.js"></script>
+</body>
+</html>
